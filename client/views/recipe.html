@@ -1,0 +1,14 @@
+<head>
+  <title>Recipes</title>
+</head>
+
+<body></body>
+
+<template name="recipeview">
+  <h1>Recipe Page</h1>
+  {{text}} {{#each recipes}} {{> recipe}} {{/each}}
+</template>
+
+<template name="recipe">
+  <li>{{title}}</li>
+</template>

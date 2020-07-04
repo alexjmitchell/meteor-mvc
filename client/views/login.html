@@ -1,0 +1,34 @@
+<head>
+  <title>Login/Register</title>
+</head>
+<body></body>
+
+<template name="loginForm">
+  <form class="logForm">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" />
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+    <button type="submit">{{pageTitle}}</button>
+  </form>
+</template>
+
+<template name="registrationForm">
+  <form class="regForm">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" />
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username" />
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" />
+    <button type="submit">Register</button>
+  </form>
+
+  {{#if errors}}
+  <p>{{errors}}</p>
+  {{/if}}
+</template>
+
+<template name="title">
+  Login/Register
+</template>
